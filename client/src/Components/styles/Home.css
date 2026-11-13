@@ -1,0 +1,93 @@
+#home {
+  background: url('../../assets/images/home-bg.jpg') no-repeat center center;
+  background-size: cover;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 12em;
+  text-align: center;
+}
+
+#home h1 {
+  color: var(--color-white);
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.home-info {
+  margin-top: 7em;
+}
+
+.home-info h3 {
+  color: var(--color-light);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.online-form {
+  position: relative;
+}
+
+.online-form .form-control {
+  border-color: var(--color-light);
+  display: inline-block;
+  vertical-align: top;
+  border-radius: var(--radius);
+  box-shadow: none;
+  height: 50px;
+  margin-right: 0.5em;
+  padding-left: 15px;
+}
+
+.online-form input[type="email"] {
+  width: 60%;
+}
+
+.online-form button {
+  background: var(--color-accent);
+  border: 0;
+  color: var(--color-white);
+  position: absolute;
+  right: 6em;
+  width: 25%;
+  border-radius: var(--radius);
+}
+
+.online-form button:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-info {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .online-form input[type="email"],
+  .online-form .form-control {
+    width: 85%;
+  }
+
+  .online-form .form-control {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .online-form button {
+    position: relative;
+    right: 0;
+  }
+}
