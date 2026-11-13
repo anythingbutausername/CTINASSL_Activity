@@ -1,1 +1,0 @@
-# CTINASSL_Activity
